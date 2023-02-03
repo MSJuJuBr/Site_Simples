@@ -1,0 +1,53 @@
+:root {
+    --GREEN: #0fF000;
+    --WHITE: #FFFFFF;
+    --BLACK: #000000; 
+}
+
+*{
+    color:var(--fontColor);
+    font-family: helvetica;
+}
+
+body{
+    background:var(--bg);
+}
+
+ul{
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle
+}
+.list{
+    font-family: "Georgia";
+    list-style: square;
+}
+
+.light-theme{
+    --bg:var(--GREEN);
+    --fontColor:var(--BLACK);
+    --btnBg:var(--BLACK);
+    --btnFC: var(--WHITE);
+}
+.dark-theme{
+    --bg:var(--BLACK);
+    --fontColor:var(--GREEN);
+    --btnBg:var(--WHITE);
+    --btnFC:var(--BLACK);
+}
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25%;
+    border: none;
+    color: var(--btnFC);
+    background-color: var(--btnBg);
+}
+.btn:focus {
+    outline-style: none;
+}
